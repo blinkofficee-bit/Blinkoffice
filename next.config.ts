@@ -34,6 +34,19 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // Handle 404 errors by redirecting to home page
+  async rewrites() {
+    return {
+      fallback: [
+        {
+          source: '/:path*',
+          destination: '/',
+        },
+      ],
+    };
+  },
+  // Ensure trailing slashes are handled consistently
+  trailingSlash: false,
 };
 
 export default nextConfig;

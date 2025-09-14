@@ -15,7 +15,7 @@ const ServicesPage: React.FC = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1 className="display-3 mb-4 fw-bold">Infinite Possibilities. Within Reach.</h1>
-              <p className="lead mb-5 fs-4">Dive deeper and discover the exceptional spaces we've meticulously curated. From cutting-edge workspaces to award-winning offices, each recommendation reflects our commitment to exceeding expectations.</p>
+              <p className="lead mb-5 fs-4">Dive deeper and discover the exceptional spaces we&apos;ve meticulously curated. From cutting-edge workspaces to award-winning offices, each recommendation reflects our commitment to exceeding expectations.</p>
             </div>
           </div>
         </div>

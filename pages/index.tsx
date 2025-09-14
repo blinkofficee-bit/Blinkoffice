@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
                       Work Smarter. <span className="text-accent">Work Faster.</span>
                     </h1>
                     <p className="hero-subtitle">
-                      Discover commercial spaces that boost productivity and drive business success in Gurgaon's dynamic landscape. From modern office towers to strategic retail locations, find your perfect workspace today.
+                      Discover commercial spaces that boost productivity and drive business success in Gurgaon&apos;s dynamic landscape. From modern office towers to strategic retail locations, find your perfect workspace today.
                     </p>
                     <div className="hero-buttons">
                       <Link href="/properties" className="btn btn-primary btn-lg me-3">

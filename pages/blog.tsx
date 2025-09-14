@@ -98,7 +98,7 @@ const BlogPage: React.FC = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1 className="display-3 mb-4 fw-bold">Market Intelligence. Within Reach.</h1>
-              <p className="lead mb-5 fs-4">Before making any recommendation, we analyze market dynamics, demographic shifts, and growth projections. Our insights help you make informed decisions in Gurgaon's evolving commercial landscape.</p>
+              <p className="lead mb-5 fs-4">Before making any recommendation, we analyze market dynamics, demographic shifts, and growth projections. Our insights help you make informed decisions in Gurgaon&apos;s evolving commercial landscape.</p>
             </div>
           </div>
           <div className="row g-4">

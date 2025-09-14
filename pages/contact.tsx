@@ -231,7 +231,7 @@ const ContactPage: React.FC = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 className="display-3 mb-4 fw-bold">Let's Craft Your Perfect Space</h1>
+              <h1 className="display-3 mb-4 fw-bold">Let&apos;s Craft Your Perfect Space</h1>
               <p className="lead mb-5 fs-4">Ready to discover exceptional commercial opportunities? Our team of experts is here to understand your unique business needs and recommend spaces that drive success.</p>
             </div>
           </div>

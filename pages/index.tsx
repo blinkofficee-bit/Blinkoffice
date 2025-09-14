@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
                   Find Your Perfect <span className="text-primary">Commercial Space</span> in Gurgaon
                 </h1>
                 <p className="hero-subtitle">
-                  Discover premium office spaces, retail locations, and warehouses in Gurgaon's most sought-after business districts with our expert guidance.
+                  Discover premium office spaces, retail locations, and warehouses in Gurgaon&apos;s most sought-after business districts with our expert guidance.
                 </p>
                 <div className="hero-buttons">
                   <Link href="/properties" className="btn btn-primary btn-lg me-3">
@@ -81,7 +81,7 @@ const HomePage: React.FC = () => {
                   <i className="fas fa-building"></i>
                 </div>
                 <h4>Office Spaces</h4>
-                <p>Premium office spaces in Gurgaon's business districts with modern amenities and flexible lease terms.</p>
+                <p>Premium office spaces in Gurgaon&apos;s business districts with modern amenities and flexible lease terms.</p>
                 <ul>
                   <li>Cyber City locations</li>
                   <li>Golf Course Road properties</li>
@@ -214,7 +214,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h5>15+ Years Experience</h5>
-                    <p>Deep expertise in Gurgaon's commercial real estate market</p>
+                    <p>Deep expertise in Gurgaon&apos;s commercial real estate market</p>
                   </div>
                 </div>
                 <div className="feature-item">

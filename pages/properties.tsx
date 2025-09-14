@@ -16,7 +16,7 @@ const PropertiesPage: React.FC = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h1 className="hero-title">Premium Commercial Properties</h1>
               <p className="hero-subtitle">
-                Discover the best commercial real estate opportunities in Gurgaon's prime business locations
+                Discover the best commercial real estate opportunities in Gurgaon&apos;s prime business locations
               </p>
             </div>
           </div>
@@ -345,7 +345,7 @@ const PropertiesPage: React.FC = () => {
         <div className="container text-center">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <h2 className="cta-title">Can't Find What You're Looking For?</h2>
+              <h2 className="cta-title">Can&apos;t Find What You&apos;re Looking For?</h2>
               <p className="cta-subtitle">
                 Let our experts help you find the perfect commercial property that matches your specific requirements.
               </p>

@@ -36,7 +36,7 @@ const ServicesPage: React.FC = () => {
                   <h3>Office Spaces</h3>
                 </div>
                 <div className="service-content">
-                  <p>Premium office spaces in Gurgaon's top business districts with modern amenities and flexible terms.</p>
+                  <p>Premium office spaces in Gurgaon&apos;s top business districts with modern amenities and flexible terms.</p>
                   <ul className="service-features">
                     <li>Cyber City premium locations</li>
                     <li>Golf Course Road offices</li>

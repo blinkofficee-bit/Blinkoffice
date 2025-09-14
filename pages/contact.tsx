@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <h4>Email Us</h4>
-                <p>Send us your requirements and we'll respond quickly</p>
+                <p>Send us your requirements and we&apos;ll respond quickly</p>
                 <div className="contact-details">
                   <a href="mailto:info@blinkoffice.com">info@blinkoffice.com</a>
                   <a href="mailto:sales@blinkoffice.com">sales@blinkoffice.com</a>
@@ -232,7 +232,7 @@ const ContactPage: React.FC = () => {
           <div className="row">
             <div className="col-12 text-center mb-4">
               <h2 className="section-title">Find Us</h2>
-              <p className="section-subtitle">Located in the heart of Gurgaon's business district</p>
+              <p className="section-subtitle">Located in the heart of Gurgaon&apos;s business district</p>
             </div>
           </div>
           <div className="row">

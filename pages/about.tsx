@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
                 Founded in 2009, Blinkoffice began as a vision to transform the commercial real estate landscape in Gurgaon and Delhi NCR.
               </p>
               <p>
-                What started as a small team of passionate real estate professionals has grown into one of the most trusted names in commercial property consulting. We've successfully facilitated over 500 commercial property transactions, helping businesses of all sizes find their perfect space.
+                What started as a small team of passionate real estate professionals has grown into one of the most trusted names in commercial property consulting. We&apos;ve successfully facilitated over 500 commercial property transactions, helping businesses of all sizes find their perfect space.
               </p>
               <p>
                 Our deep understanding of the local market dynamics, combined with our commitment to client success, has established us as the preferred choice for commercial real estate solutions in the region.
@@ -84,7 +84,7 @@ const AboutPage: React.FC = () => {
                 </div>
                 <h3>Our Mission</h3>
                 <p>
-                  To provide exceptional commercial real estate solutions that drive business growth and success in the NCR region. We strive to understand each client's unique requirements and match them with properties that support their current needs and future growth ambitions.
+                  To provide exceptional commercial real estate solutions that drive business growth and success in the NCR region. We strive to understand each client&apos;s unique requirements and match them with properties that support their current needs and future growth ambitions.
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@ const AboutPage: React.FC = () => {
                   <i className="fas fa-users"></i>
                 </div>
                 <h4>Client Focus</h4>
-                <p>Our clients' success is our success. We prioritize their needs and work tirelessly to exceed expectations.</p>
+                <p>Our clients&apos; success is our success. We prioritize their needs and work tirelessly to exceed expectations.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -257,7 +257,7 @@ const AboutPage: React.FC = () => {
             <div className="col-lg-8 mx-auto">
               <h2 className="cta-title">Ready to Work With Us?</h2>
               <p className="cta-subtitle">
-                Let's discuss how we can help you find the perfect commercial space for your business needs.
+                Let&apos;s discuss how we can help you find the perfect commercial space for your business needs.
               </p>
               <div className="cta-buttons">
                 <Link href="/contact" className="btn btn-light btn-lg me-3">

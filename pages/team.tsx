@@ -44,7 +44,7 @@ const TeamPage: React.FC = () => {
                   <h4>Rajesh Kumar</h4>
                   <p className="team-position">Founder & CEO</p>
                   <p className="team-bio">
-                    With over 20 years in commercial real estate, Rajesh founded Blinkoffice with a vision to transform the property landscape in NCR. His strategic leadership has driven the company's growth.
+                    With over 20 years in commercial real estate, Rajesh founded Blinkoffice with a vision to transform the property landscape in NCR. His strategic leadership has driven the company&apos;s growth.
                   </p>
                   <div className="team-stats">
                     <span>20+ Years Experience</span>
@@ -344,7 +344,7 @@ const TeamPage: React.FC = () => {
             <div className="col-lg-8 mx-auto">
               <h2 className="cta-title">Join Our Growing Team</h2>
               <p className="cta-subtitle">
-                Are you passionate about commercial real estate? We're always looking for talented professionals to join our team.
+                Are you passionate about commercial real estate? We&apos;re always looking for talented professionals to join our team.
               </p>
               <div className="cta-buttons">
                 <Link href="/careers" className="btn btn-light btn-lg me-3">

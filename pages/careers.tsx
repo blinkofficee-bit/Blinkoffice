@@ -16,7 +16,7 @@ const CareersPage: React.FC = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h1 className="hero-title">Build Your Career With Us</h1>
               <p className="hero-subtitle">
-                Join Blinkoffice and be part of Gurgaon's leading commercial real estate team
+                Join Blinkoffice and be part of Gurgaon&apos;s leading commercial real estate team
               </p>
             </div>
           </div>
@@ -365,7 +365,7 @@ const CareersPage: React.FC = () => {
             <div className="col-lg-8 mx-auto">
               <h2 className="cta-title">Ready to Start Your Career Journey?</h2>
               <p className="cta-subtitle">
-                Don't see a position that matches your skills? Send us your resume and we'll consider you for future opportunities.
+                Don&apos;t see a position that matches your skills? Send us your resume and we&apos;ll consider you for future opportunities.
               </p>
               <div className="cta-buttons">
                 <Link href="/contact" className="btn btn-light btn-lg me-3">

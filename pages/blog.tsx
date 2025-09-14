@@ -269,7 +269,7 @@ const BlogPage: React.FC = () => {
                     <span><i className="fas fa-calendar"></i> Dec 1, 2024</span>
                     <span><i className="fas fa-clock"></i> 6 min read</span>
                   </div>
-                  <p>Exploring the growing demand for flexible office spaces and co-working environments in Gurgaon's business districts...</p>
+                  <p>Exploring the growing demand for flexible office spaces and co-working environments in Gurgaon&apos;s business districts...</p>
                   <Link href="/blog/flexible-workspace-trends" className="read-more">
                     Read More <i className="fas fa-arrow-right"></i>
                   </Link>

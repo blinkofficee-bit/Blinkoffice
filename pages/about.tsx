@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h1 className="display-3 mb-4 fw-bold">Your Office, Reimagined.</h1>
               <p className="lead mb-5 fs-4">
-                We don't just understand real estate. We understand how businesses thrive in Gurgaon's dynamic commercial landscape.
+                We don&apos;t just understand real estate. We understand how businesses thrive in Gurgaon&apos;s dynamic commercial landscape.
               </p>
               <div className="row g-4 mt-5">
                 <div className="col-md-4">
@@ -56,10 +56,10 @@ const AboutPage: React.FC = () => {
             <div className="col-lg-6">
               <h2 className="section-title">About BlinkOffice</h2>
               <p className="mb-4">
-                BlinkOffice is Gurgaon's premier commercial real estate consultancy, specializing in transforming how businesses find and utilize workspace solutions. Founded with a vision to revolutionize the commercial property landscape, we bridge the gap between ambitious businesses and exceptional spaces.
+                BlinkOffice is Gurgaon&apos;s premier commercial real estate consultancy, specializing in transforming how businesses find and utilize workspace solutions. Founded with a vision to revolutionize the commercial property landscape, we bridge the gap between ambitious businesses and exceptional spaces.
               </p>
               <p className="mb-4">
-                Our team of seasoned professionals brings deep market knowledge and innovative approaches to commercial real estate. We understand Gurgaon's dynamic business ecosystem and help companies of all sizes - from startups to multinational corporations - find spaces that drive growth and success.
+                Our team of seasoned professionals brings deep market knowledge and innovative approaches to commercial real estate. We understand Gurgaon&apos;s dynamic business ecosystem and help companies of all sizes - from startups to multinational corporations - find spaces that drive growth and success.
               </p>
               <p>
                 With a portfolio spanning premium office towers, strategic retail locations, and modern co-working spaces, BlinkOffice has become the trusted partner for businesses seeking more than just square footage - we deliver environments that inspire productivity and foster innovation.
@@ -218,7 +218,7 @@ const AboutPage: React.FC = () => {
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="display-5 mb-4">Ready to Find Your Perfect Space?</h2>
-              <p className="lead mb-5">Let's craft an environment that drives your business success</p>
+              <p className="lead mb-5">Let&apos;s craft an environment that drives your business success</p>
               <div className="d-flex gap-3 justify-content-center flex-wrap">
                 <Link href="/contact" className="btn btn-light btn-lg">
                   <i className="fas fa-phone me-2"></i>Get Started Today

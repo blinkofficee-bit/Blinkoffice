@@ -12,12 +12,10 @@ const PropertiesPage: React.FC = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-8 mx-auto text-center">
-              <h1 className="hero-title">Premium Commercial Properties</h1>
-              <p className="hero-subtitle">
-                Discover the best commercial real estate opportunities in Gurgaon&apos;s prime business locations
-              </p>
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Premium Spaces. Exceptional Results.</h1>
+              <p className="lead mb-5 fs-4">Before recommending any property, we chart the movement of opportunity. This thorough approach results in spaces that harness natural advantages and consistently exceed client expectations.</p>
             </div>
           </div>
         </div>
@@ -364,7 +362,7 @@ const PropertiesPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -409,7 +407,7 @@ const PropertiesPage: React.FC = () => {
 
         .property-image {
           height: 250px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           position: relative;
           display: flex;
           align-items: center;
@@ -469,7 +467,7 @@ const PropertiesPage: React.FC = () => {
 
         .property-location i {
           margin-right: 0.5rem;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .property-details {
@@ -488,7 +486,7 @@ const PropertiesPage: React.FC = () => {
         }
 
         .detail-item i {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .property-features {
@@ -510,7 +508,7 @@ const PropertiesPage: React.FC = () => {
         .property-price {
           font-size: 1.5rem;
           font-weight: 700;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           margin-bottom: 1.5rem;
         }
 
@@ -524,7 +522,7 @@ const PropertiesPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
         }
 
         .cta-title {

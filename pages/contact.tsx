@@ -13,9 +13,9 @@ const ContactPage: React.FC = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8 mx-auto text-center">
-              <h1 className="hero-title">Contact Us</h1>
+              <h1 className="hero-title">Next-Gen Workspaces for Modern Teams</h1>
               <p className="hero-subtitle">
-                Ready to find your perfect commercial space? Get in touch with our experts today.
+                Ready to transform your business with innovative commercial spaces? Connect with our experts to discover environments that inspire success.
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
                 <h4>Call Us</h4>
                 <p>Speak directly with our property experts</p>
                 <div className="contact-details">
-                  <a href="tel:+919876543210">+91 98765 43210</a>
+                  <a href="tel:+919891100010">+91 98911 00010</a>
                   <a href="tel:+911244567890">+91 124 456 7890</a>
                 </div>
                 <small>Mon-Sat: 9:00 AM - 7:00 PM</small>
@@ -201,7 +201,7 @@ const ContactPage: React.FC = () => {
                   <i className="fas fa-phone-alt"></i>
                 </div>
                 <h5>Call Now</h5>
-                <a href="tel:+919876543210" className="btn btn-outline-primary">+91 98765 43210</a>
+                <a href="tel:+919891100010" className="btn btn-outline-primary">+91 98911 00010</a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -210,7 +210,7 @@ const ContactPage: React.FC = () => {
                   <i className="fab fa-whatsapp"></i>
                 </div>
                 <h5>WhatsApp</h5>
-                <a href="https://wa.me/919876543210" className="btn btn-outline-success">Chat on WhatsApp</a>
+                <a href="https://wa.me/919891100010" className="btn btn-outline-success">Chat on WhatsApp</a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -230,9 +230,9 @@ const ContactPage: React.FC = () => {
       <section className="map-section py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center mb-4">
-              <h2 className="section-title">Find Us</h2>
-              <p className="section-subtitle">Located in the heart of Gurgaon&apos;s business district</p>
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Let's Craft Your Perfect Space</h1>
+              <p className="lead mb-5 fs-4">Ready to discover exceptional commercial opportunities? Our team of experts is here to understand your unique business needs and recommend spaces that drive success.</p>
             </div>
           </div>
           <div className="row">
@@ -256,7 +256,7 @@ const ContactPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -302,7 +302,7 @@ const ContactPage: React.FC = () => {
         .contact-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -329,7 +329,7 @@ const ContactPage: React.FC = () => {
 
         .contact-details a {
           display: block;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           text-decoration: none;
           font-weight: 500;
           margin-bottom: 0.5rem;
@@ -377,13 +377,13 @@ const ContactPage: React.FC = () => {
         }
 
         .form-control:focus, .form-select:focus {
-          border-color: #007bff;
+          border-color: hsl(359.1deg 83.26% 53.14%);
           box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
         }
 
         .form-check-input:checked {
-          background-color: #007bff;
-          border-color: #007bff;
+          background-color: hsl(359.1deg 83.26% 53.14%);
+          border-color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .quick-contact-item {
@@ -422,7 +422,7 @@ const ContactPage: React.FC = () => {
 
         .map-placeholder {
           height: 400px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           display: flex;
           align-items: center;
           justify-content: center;
@@ -452,7 +452,7 @@ const ContactPage: React.FC = () => {
 
         .map-directions .btn:hover {
           background: white;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         @media (max-width: 768px) {

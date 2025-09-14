@@ -41,13 +41,13 @@ const TeamPage: React.FC = () => {
                   </div>
                 </div>
                 <div className="team-content">
-                  <h4>Rajesh Kumar</h4>
+                  <h4>Hardeep Joon</h4>
                   <p className="team-position">Founder & CEO</p>
                   <p className="team-bio">
-                    With over 20 years in commercial real estate, Rajesh founded Blinkoffice with a vision to transform the property landscape in NCR. His strategic leadership has driven the company&apos;s growth.
+                    With over 5 years in commercial real estate, Hardeep founded Blinkoffice with a vision to transform the property landscape in NCR. His strategic leadership has driven the company&apos;s growth.
                   </p>
                   <div className="team-stats">
-                    <span>20+ Years Experience</span>
+                    <span>5+ Years Experience</span>
                     <span>500+ Deals Closed</span>
                   </div>
                   <div className="team-social">
@@ -68,10 +68,10 @@ const TeamPage: React.FC = () => {
                   <h4>Priya Sharma</h4>
                   <p className="team-position">Managing Director</p>
                   <p className="team-bio">
-                    Priya brings 15+ years of expertise in commercial leasing and investment advisory. She leads our strategic partnerships and client relationship management.
+                    Priya brings 5+ years of expertise in commercial leasing and investment advisory. She leads our strategic partnerships and client relationship management.
                   </p>
                   <div className="team-stats">
-                    <span>15+ Years Experience</span>
+                    <span>5+ Years Experience</span>
                     <span>₹200Cr+ Deals</span>
                   </div>
                   <div className="team-social">
@@ -89,21 +89,19 @@ const TeamPage: React.FC = () => {
       <section className="departments-section py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Our Departments</h2>
-              <p className="section-subtitle">Specialized teams for comprehensive service</p>
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Global Experiences. Within Reach.</h1>
+              <p className="lead mb-5 fs-4">What can we offer that other consultancies cannot? How do we elevate your real estate experience? Our team of experts answers these questions with every carefully curated recommendation and strategic insight.</p>
             </div>
           </div>
-
-          {/* Sales Team */}
-          <div className="department-block mb-5">
-            <div className="row">
-              <div className="col-12 mb-4">
-                <h3 className="department-title">
-                  <i className="fas fa-chart-line"></i>
-                  Sales & Leasing Team
-                </h3>
-              </div>
+        </div>
+        <div className="department-block mb-5">
+          <div className="row">
+            <div className="col-12 mb-4">
+              <h3 className="department-title">
+                <i className="fas fa-chart-line"></i>
+                Sales & Leasing Team
+              </h3>
             </div>
             <div className="row g-4">
               <div className="col-lg-3 col-md-6">
@@ -361,7 +359,7 @@ const TeamPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -404,11 +402,11 @@ const TeamPage: React.FC = () => {
         }
 
         .team-card.leadership {
-          border-top: 4px solid #007bff;
+          border-top: 4px solid hsl(359.1deg 83.26% 53.14%);
         }
 
         .team-image {
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           height: 200px;
           display: flex;
           align-items: center;
@@ -438,7 +436,7 @@ const TeamPage: React.FC = () => {
         }
 
         .team-position {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           font-weight: 500;
           margin-bottom: 1rem;
         }
@@ -485,13 +483,13 @@ const TeamPage: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           text-decoration: none;
           transition: all 0.3s ease;
         }
 
         .team-social a:hover {
-          background: #007bff;
+          background: hsl(359.1deg 83.26% 53.14%);
           color: white;
         }
 
@@ -502,7 +500,7 @@ const TeamPage: React.FC = () => {
         }
 
         .team-contact a {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           text-decoration: none;
           font-size: 0.9rem;
         }
@@ -522,7 +520,7 @@ const TeamPage: React.FC = () => {
         }
 
         .department-title i {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .value-card {
@@ -565,7 +563,7 @@ const TeamPage: React.FC = () => {
         }
 
         .join-team-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
         }
 
         .cta-title {

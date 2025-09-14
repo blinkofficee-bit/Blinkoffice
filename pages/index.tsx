@@ -1,77 +1,144 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 
 const HomePage: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 3;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <Layout 
       title="Blinkoffice - Premier Commercial Real Estate in Gurgaon"
       description="Leading commercial real estate agency in Gurgaon offering office spaces, retail properties, and warehouses with expert consultation and prime locations."
       keywords="commercial real estate Gurgaon, office space, retail property, warehouse, real estate consultant"
     >
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container">
-          <div className="row align-items-center min-vh-100">
-            <div className="col-lg-6">
-              <div className="hero-content">
-                <h1 className="hero-title">
-                  Find Your Perfect <span className="text-primary">Commercial Space</span> in Gurgaon
-                </h1>
-                <p className="hero-subtitle">
-                  Discover premium office spaces, retail locations, and warehouses in Gurgaon&apos;s most sought-after business districts with our expert guidance.
-                </p>
-                <div className="hero-buttons">
-                  <Link href="/properties" className="btn btn-primary btn-lg me-3">
-                    Browse Properties
-                  </Link>
-                  <Link href="/contact" className="btn btn-outline-primary btn-lg">
-                    Contact Us
-                  </Link>
-                </div>
-                <div className="hero-stats">
-                  <div className="row">
-                    <div className="col-4">
-                      <div className="stat-item">
-                        <h3>500+</h3>
-                        <p>Properties Sold</p>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="stat-item">
-                        <h3>15+</h3>
-                        <p>Years Experience</p>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="stat-item">
-                        <h3>1000+</h3>
-                        <p>Happy Clients</p>
-                      </div>
+      {/* Hero Slider Section */}
+      <section className="hero-slider">
+        <div className="slider-container">
+          <div className={`slide ${currentSlide === 0 ? 'active' : ''}`} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'}}>
+            <div className="slide-overlay"></div>
+            <div className="container">
+              <div className="row align-items-center min-vh-100">
+                <div className="col-lg-8">
+                  <div className="hero-content">
+                    <h1 className="hero-title">
+                      Work Smarter. <span className="text-accent">Work Faster.</span>
+                    </h1>
+                    <p className="hero-subtitle">
+                      Discover commercial spaces that boost productivity and drive business success in Gurgaon's dynamic landscape. From modern office towers to strategic retail locations, find your perfect workspace today.
+                    </p>
+                    <div className="hero-buttons">
+                      <Link href="/properties" className="btn btn-primary btn-lg me-3">
+                        <i className="fas fa-building me-2"></i>Browse Properties
+                      </Link>
+                      <Link href="/contact" className="btn btn-outline-light btn-lg">
+                        <i className="fas fa-phone me-2"></i>Call Now
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="hero-image">
-                <div className="building-card">
-                  <h4>Premium Office Spaces</h4>
-                  <p>Modern facilities in prime locations</p>
+          </div>
+
+          <div className={`slide ${currentSlide === 1 ? 'active' : ''}`} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'}}>
+            <div className="slide-overlay"></div>
+            <div className="container">
+              <div className="row align-items-center min-vh-100">
+                <div className="col-lg-8">
+                  <div className="hero-content">
+                    <h1 className="hero-title">
+                      Your Office, <span className="text-accent">Reimagined.</span>
+                    </h1>
+                    <p className="hero-subtitle">
+                      Transform your business with innovative commercial spaces designed for modern teams. From collaborative workspaces to executive suites, we help you find environments that inspire success.
+                    </p>
+                    <div className="hero-buttons">
+                      <Link href="/services" className="btn btn-primary btn-lg me-3">
+                        <i className="fas fa-handshake me-2"></i>Our Services
+                      </Link>
+                      <Link href="/contact" className="btn btn-outline-light btn-lg">
+                        <i className="fab fa-whatsapp me-2"></i>WhatsApp
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className={`slide ${currentSlide === 2 ? 'active' : ''}`} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'}}>
+            <div className="slide-overlay"></div>
+            <div className="container">
+              <div className="row align-items-center min-vh-100">
+                <div className="col-lg-8">
+                  <div className="hero-content">
+                    <h1 className="hero-title">
+                      Where Productivity <span className="text-accent">Meets Possibility.</span>
+                    </h1>
+                    <p className="hero-subtitle">
+                      Unlock your business potential with next-generation commercial spaces. From innovative retail locations to cutting-edge logistics hubs, discover environments designed for modern success.
+                    </p>
+                    <div className="hero-buttons">
+                      <Link href="/properties" className="btn btn-primary btn-lg me-3">
+                        <i className="fas fa-store me-2"></i>View Retail Spaces
+                      </Link>
+                      <Link href="/team" className="btn btn-outline-light btn-lg">
+                        <i className="fas fa-users me-2"></i>Meet Our Team
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slider Navigation - Hidden */}
+          <div className="slider-nav" style={{display: 'none'}}>
+            <button className="nav-btn prev-btn" onClick={prevSlide}>
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <button className="nav-btn next-btn" onClick={nextSlide}>
+              <i className="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          {/* Slider Indicators */}
+          <div className="slider-indicators">
+            <button className={`indicator ${currentSlide === 0 ? 'active' : ''}`} onClick={() => goToSlide(0)}></button>
+            <button className={`indicator ${currentSlide === 1 ? 'active' : ''}`} onClick={() => goToSlide(1)}></button>
+            <button className={`indicator ${currentSlide === 2 ? 'active' : ''}`} onClick={() => goToSlide(2)}></button>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="services-section py-5">
+      <section className="services-section py-5" style={{backgroundColor: 'var(--blink-section-bg)'}}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Our Services</h2>
-              <p className="section-subtitle">Comprehensive commercial real estate solutions</p>
+              <h2 className="section-title">Next-Gen Workspaces for Modern Teams</h2>
+              <p className="section-subtitle">We understand how businesses evolve and thrive. Every space we recommend is designed around modern work patterns, collaboration needs, and productivity optimization.</p>
             </div>
           </div>
           <div className="row g-4">
@@ -80,12 +147,12 @@ const HomePage: React.FC = () => {
                 <div className="service-icon">
                   <i className="fas fa-building"></i>
                 </div>
-                <h4>Office Spaces</h4>
-                <p>Premium office spaces in Gurgaon&apos;s business districts with modern amenities and flexible lease terms.</p>
+                <h4>Customer-Centric Design</h4>
+                <p>Every space recommendation is based on detailed research of your business behavior, operational needs, and growth projections.</p>
                 <ul>
-                  <li>Cyber City locations</li>
-                  <li>Golf Course Road properties</li>
-                  <li>Sohna Road commercial hubs</li>
+                  <li>Deep industry analysis</li>
+                  <li>Behavioral research insights</li>
+                  <li>Future-ready planning</li>
                 </ul>
               </div>
             </div>
@@ -94,12 +161,12 @@ const HomePage: React.FC = () => {
                 <div className="service-icon">
                   <i className="fas fa-store"></i>
                 </div>
-                <h4>Retail Spaces</h4>
-                <p>High-footfall retail locations perfect for shops, showrooms, and commercial establishments.</p>
+                <h4>Intuitive Functionality</h4>
+                <p>Our spaces subconsciously guide seamless interactions. We consider everything from natural light to ambient temperature, yielding exceptional results.</p>
                 <ul>
-                  <li>Mall spaces</li>
-                  <li>Street-facing shops</li>
-                  <li>Food court locations</li>
+                  <li>Smart building integration</li>
+                  <li>Optimal lighting design</li>
+                  <li>Climate-controlled environments</li>
                 </ul>
               </div>
             </div>
@@ -108,12 +175,12 @@ const HomePage: React.FC = () => {
                 <div className="service-icon">
                   <i className="fas fa-warehouse"></i>
                 </div>
-                <h4>Warehouses</h4>
-                <p>Strategic warehouse locations with excellent connectivity for logistics and distribution.</p>
+                <h4>Holistic Understanding</h4>
+                <p>We create more than just spaces. We craft environments that foster well-being, productivity and connection for lasting business success.</p>
                 <ul>
-                  <li>Highway connectivity</li>
-                  <li>Modern facilities</li>
-                  <li>Flexible sizing options</li>
+                  <li>Wellness-focused design</li>
+                  <li>Productivity optimization</li>
+                  <li>Community building spaces</li>
                 </ul>
               </div>
             </div>
@@ -213,7 +280,7 @@ const HomePage: React.FC = () => {
                     <i className="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h5>15+ Years Experience</h5>
+                    <h5>5+ Years Experience</h5>
                     <p>Deep expertise in Gurgaon&apos;s commercial real estate market</p>
                   </div>
                 </div>
@@ -281,109 +348,229 @@ const HomePage: React.FC = () => {
       </section>
 
       <style jsx>{`
-        .hero-section {
-          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-          padding: 80px 0;
+        :root {
+          --blink-blue: #3A86FF;
+          --soft-slate-gray: #6C757D;
+          --cloud-white: #F8F9FA;
+          --lime-signal: #A3FFAE;
+          --coral-flash: #FF6B6B;
+        }
+
+        .hero-slider {
+          position: relative;
+          height: 100vh;
+          overflow: hidden;
+        }
+
+        .slider-container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .slide {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+
+        .slide.active {
+          opacity: 1;
+        }
+
+        .slide-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, rgba(58, 134, 255, 0.8) 0%, rgba(58, 134, 255, 0.6) 100%);
+        }
+
+        .hero-content {
+          position: relative;
+          z-index: 2;
+          color: white;
         }
 
         .hero-title {
           font-size: 3.5rem;
           font-weight: 700;
-          color: #102e50;
           margin-bottom: 1.5rem;
-          line-height: 1.2;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
-        .text-primary {
-          color: #007bff !important;
+        .text-accent {
+          color: var(--lime-signal);
         }
 
         .hero-subtitle {
-          font-size: 1.2rem;
-          color: #6c757d;
+          font-size: 1.3rem;
           margin-bottom: 2rem;
-          line-height: 1.6;
+          opacity: 0.95;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         .hero-buttons {
           margin-bottom: 3rem;
         }
 
+        .btn-primary {
+          background: var(--blink-blue);
+          border: 2px solid var(--blink-blue);
+          padding: 12px 30px;
+          font-weight: 600;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+          background: transparent;
+          border-color: var(--blink-blue);
+          color: var(--blink-blue);
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(58, 134, 255, 0.3);
+        }
+
+        .btn-outline-light {
+          border: 2px solid white;
+          color: white;
+          padding: 12px 30px;
+          font-weight: 600;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+          background: white;
+          color: var(--blink-blue);
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+        }
+
         .hero-stats {
-          margin-top: 2rem;
+          background: rgba(248, 249, 250, 0.95);
+          backdrop-filter: blur(10px);
+          padding: 2rem;
+          border-radius: 20px;
+          box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
         .stat-item {
           text-align: center;
-          padding: 1rem;
         }
 
         .stat-item h3 {
-          font-size: 2rem;
+          font-size: 2.2rem;
           font-weight: 700;
-          color: #007bff;
+          color: var(--blink-blue);
           margin-bottom: 0.5rem;
         }
 
         .stat-item p {
-          color: #6c757d;
+          color: var(--soft-slate-gray);
           margin: 0;
-          font-size: 0.9rem;
+          font-size: 0.95rem;
+          font-weight: 500;
         }
 
-        .hero-image, .why-choose-image {
-          position: relative;
-          height: 400px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
-          border-radius: 15px;
+        .slider-nav {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 3;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 30px;
+        }
+
+        .nav-btn {
+          background: rgba(58, 134, 255, 0.8);
+          border: none;
+          color: white;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
         }
 
-        .building-card, .image-card {
-          background: rgba(255, 255, 255, 0.95);
-          padding: 2rem;
-          border-radius: 10px;
-          text-align: center;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        .nav-btn:hover {
+          background: var(--blink-blue);
+          transform: scale(1.1);
+          box-shadow: 0 5px 15px rgba(58, 134, 255, 0.4);
         }
 
-        .building-card h4, .image-card h4 {
-          color: #102e50;
-          margin-bottom: 1rem;
+        .slider-indicators {
+          position: absolute;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 10px;
+          z-index: 3;
+        }
+
+        .indicator {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+          background: var(--lime-signal);
+          border-color: var(--lime-signal);
         }
 
         .section-title {
           font-size: 2.5rem;
           font-weight: 700;
-          color: #102e50;
+          color: var(--blink-blue);
           margin-bottom: 1rem;
         }
 
         .section-subtitle {
           font-size: 1.1rem;
-          color: #6c757d;
+          color: var(--soft-slate-gray);
           margin-bottom: 0;
         }
 
         .service-card {
-          background: white;
+          background: var(--cloud-white);
           padding: 2rem;
-          border-radius: 15px;
-          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          border-radius: 20px;
+          box-shadow: 0 8px 25px rgba(58, 134, 255, 0.1);
           height: 100%;
-          transition: transform 0.3s ease;
+          transition: all 0.3s ease;
+          border: 1px solid rgba(58, 134, 255, 0.1);
         }
 
         .service-card:hover {
-          transform: translateY(-5px);
+          transform: translateY(-8px);
+          box-shadow: 0 15px 40px rgba(58, 134, 255, 0.2);
+          border-color: var(--blink-blue);
         }
 
         .service-icon {
           width: 70px;
           height: 70px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, var(--blink-blue), #2563eb);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -394,13 +581,13 @@ const HomePage: React.FC = () => {
         }
 
         .service-card h4 {
-          color: #102e50;
+          color: var(--blink-blue);
           font-weight: 600;
           margin-bottom: 1rem;
         }
 
         .service-card p {
-          color: #6c757d;
+          color: var(--soft-slate-gray);
           margin-bottom: 1rem;
         }
 
@@ -410,7 +597,7 @@ const HomePage: React.FC = () => {
         }
 
         .service-card li {
-          color: #6c757d;
+          color: var(--soft-slate-gray);
           padding: 0.25rem 0;
           position: relative;
           padding-left: 1.5rem;
@@ -418,13 +605,14 @@ const HomePage: React.FC = () => {
 
         .service-card li:before {
           content: "✓";
-          color: #28a745;
+          color: var(--lime-signal);
           font-weight: bold;
           position: absolute;
           left: 0;
         }
 
         .property-card {
+          background: var(--cloud-white);
           background: white;
           border-radius: 15px;
           overflow: hidden;
@@ -438,7 +626,7 @@ const HomePage: React.FC = () => {
 
         .property-image {
           height: 200px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           position: relative;
           display: flex;
           align-items: center;
@@ -497,7 +685,7 @@ const HomePage: React.FC = () => {
         .property-price {
           font-size: 1.25rem;
           font-weight: 700;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .feature-list {
@@ -513,7 +701,7 @@ const HomePage: React.FC = () => {
         .feature-icon {
           width: 50px;
           height: 50px;
-          background: linear-gradient(135deg, #28a745, #20c997);
+          background: hsl(359.1deg 83.26% 53.14%);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -524,7 +712,7 @@ const HomePage: React.FC = () => {
         }
 
         .feature-item h5 {
-          color: #102e50;
+          color: #000000;
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
@@ -535,7 +723,22 @@ const HomePage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: #ffffff !important;
+        }
+
+        .hero-title {
+          font-size: 3.5rem;
+          font-weight: 800;
+          line-height: 1.1;
+          margin-bottom: 1.5rem;
+          color: white;
+        }
+
+        .hero-subtitle {
+          font-size: 1.25rem;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+          color: rgba(255, 255, 255, 0.9);
         }
 
         .cta-title {

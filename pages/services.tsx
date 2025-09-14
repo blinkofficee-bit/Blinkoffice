@@ -12,12 +12,10 @@ const ServicesPage: React.FC = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-8 mx-auto text-center">
-              <h1 className="hero-title">Our Services</h1>
-              <p className="hero-subtitle">
-                Comprehensive commercial real estate solutions tailored to your business needs
-              </p>
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Infinite Possibilities. Within Reach.</h1>
+              <p className="lead mb-5 fs-4">Dive deeper and discover the exceptional spaces we've meticulously curated. From cutting-edge workspaces to award-winning offices, each recommendation reflects our commitment to exceeding expectations.</p>
             </div>
           </div>
         </div>
@@ -304,7 +302,7 @@ const ServicesPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -347,7 +345,7 @@ const ServicesPage: React.FC = () => {
         }
 
         .service-header {
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           color: white;
           padding: 2rem;
           border-radius: 15px 15px 0 0;
@@ -410,7 +408,7 @@ const ServicesPage: React.FC = () => {
         .price-range {
           font-size: 1.5rem;
           font-weight: 700;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .price-note {
@@ -461,7 +459,7 @@ const ServicesPage: React.FC = () => {
         .step-number {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           color: white;
           border-radius: 50%;
           display: flex;
@@ -520,7 +518,7 @@ const ServicesPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
         }
 
         .cta-title {

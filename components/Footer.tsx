@@ -37,8 +37,26 @@ const Footer: React.FC = () => {
               <div className="col-lg-4 col-md-6 mb-5">
                 <div className="footer-brand">
                   <div className="brand-container mb-4">
-                    <i className="fas fa-building-flag brand-icon"></i>
-                    <span className="brand-text">Blink<span className="brand-highlight">office</span></span>
+                    <span className="footer-brand-text">
+                      <span style={{color: '#ff6b35', fontWeight: 'bold', fontSize: '32px'}}>Blink</span>
+                      <span style={{
+                        background: 'linear-gradient(45deg, #fff 0%, #f0f0f0 50%, #fff 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        fontWeight: 'bold',
+                        fontSize: '32px',
+                        position: 'relative'
+                      }}>
+                        Office
+                        <span style={{
+                          position: 'absolute',
+                          top: '-4px',
+                          right: '-12px',
+                          fontSize: '16px',
+                          color: '#ff6b35'
+                        }}>🏢</span>
+                      </span>
+                    </span>
                   </div>
                   <p className="footer-description">
                     Your premier partner in commercial real estate across Gurgaon and Delhi NCR. We specialize in delivering exceptional real estate solutions that drive business growth and success.
@@ -49,7 +67,7 @@ const Footer: React.FC = () => {
                       <span className="stat-label">Properties Sold</span>
                     </div>
                     <div className="stat-item">
-                      <span className="stat-number">15+</span>
+                      <span className="stat-number">5+</span>
                       <span className="stat-label">Years Experience</span>
                     </div>
                   </div>
@@ -96,7 +114,7 @@ const Footer: React.FC = () => {
                     <i className="fas fa-phone"></i>
                     <div>
                       <strong>Phone</strong>
-                      <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                      <p><a href="tel:+919891100010">+91 98911 00010</a></p>
                     </div>
                   </div>
                   <div className="contact-item">
@@ -180,10 +198,10 @@ const Footer: React.FC = () => {
 
       {/* Floating CTA Buttons */}
       <div className="floating-cta">
-        <a href="https://wa.me/919876543210" className="floating-btn whatsapp" title="WhatsApp">
+        <a href="https://wa.me/919891100010" className="floating-btn whatsapp" title="WhatsApp">
           <i className="fab fa-whatsapp"></i>
         </a>
-        <a href="tel:+919876543210" className="floating-btn call" title="Call Now">
+        <a href="tel:+919891100010" className="floating-btn call" title="Call Now">
           <i className="fas fa-phone"></i>
         </a>
         <a href="mailto:info@blinkoffice.com" className="floating-btn mail" title="Email">

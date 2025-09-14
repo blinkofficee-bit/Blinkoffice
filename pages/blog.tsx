@@ -41,7 +41,7 @@ const BlogPage: React.FC = () => {
                   <h3>Gurgaon Commercial Real Estate Market Outlook 2024</h3>
                   <div className="article-meta">
                     <span><i className="fas fa-calendar"></i> December 15, 2024</span>
-                    <span><i className="fas fa-user"></i> Rajesh Kumar</span>
+                    <span><i className="fas fa-user"></i> Hardeep Joon</span>
                     <span><i className="fas fa-clock"></i> 8 min read</span>
                   </div>
                   <p>
@@ -96,9 +96,9 @@ const BlogPage: React.FC = () => {
       <section className="categories-section py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Browse by Category</h2>
-              <p className="section-subtitle">Find articles that interest you most</p>
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Market Intelligence. Within Reach.</h1>
+              <p className="lead mb-5 fs-4">Before making any recommendation, we analyze market dynamics, demographic shifts, and growth projections. Our insights help you make informed decisions in Gurgaon's evolving commercial landscape.</p>
             </div>
           </div>
           <div className="row g-4">
@@ -315,7 +315,7 @@ const BlogPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -353,7 +353,7 @@ const BlogPage: React.FC = () => {
 
         .article-image {
           height: 300px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           position: relative;
           display: flex;
           align-items: center;
@@ -401,7 +401,7 @@ const BlogPage: React.FC = () => {
         }
 
         .article-meta i {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .article-content p {
@@ -439,7 +439,7 @@ const BlogPage: React.FC = () => {
         .trending-number {
           width: 30px;
           height: 30px;
-          background: #007bff;
+          background: hsl(359.1deg 83.26% 53.14%);
           color: white;
           border-radius: 50%;
           display: flex;
@@ -517,9 +517,9 @@ const BlogPage: React.FC = () => {
         }
 
         .filter-buttons .btn.active {
-          background: #007bff;
+          background: hsl(359.1deg 83.26% 53.14%);
           color: white;
-          border-color: #007bff;
+          border-color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .article-card {
@@ -568,7 +568,7 @@ const BlogPage: React.FC = () => {
         }
 
         .read-more {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           text-decoration: none;
           font-weight: 500;
           display: flex;
@@ -578,12 +578,12 @@ const BlogPage: React.FC = () => {
         }
 
         .read-more:hover {
-          color: #0056b3;
+          color: hsl(359.1deg 83.26% 53.14%);
           gap: 1rem;
         }
 
         .newsletter-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
         }
 
         .newsletter-title {

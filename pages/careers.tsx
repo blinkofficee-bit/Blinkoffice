@@ -95,9 +95,9 @@ const CareersPage: React.FC = () => {
       <section className="jobs-section py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Current Openings</h2>
-              <p className="section-subtitle">Join our team in these exciting positions</p>
+            <div className="col-12 text-center">
+              <h1 className="display-3 mb-4 fw-bold">Exceptional Careers. Within Reach.</h1>
+              <p className="lead mb-5 fs-4">What can we offer that other companies cannot? How do we elevate your career experience? Join our team of experts who answer these questions with every project, every client interaction, and every success story.</p>
             </div>
           </div>
           <div className="row g-4">
@@ -382,7 +382,7 @@ const CareersPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -428,7 +428,7 @@ const CareersPage: React.FC = () => {
         .benefit-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, #007bff, #0056b3);
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -502,7 +502,7 @@ const CareersPage: React.FC = () => {
         }
 
         .job-meta i {
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
         }
 
         .job-details p {
@@ -577,7 +577,7 @@ const CareersPage: React.FC = () => {
 
         .benefit-item i {
           font-size: 3rem;
-          color: #007bff;
+          color: hsl(359.1deg 83.26% 53.14%);
           margin-bottom: 1rem;
         }
 
@@ -594,7 +594,7 @@ const CareersPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
         }
 
         .cta-title {

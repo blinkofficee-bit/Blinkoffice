@@ -1,0 +1,555 @@
+/* ================================================== */
+/* Blinkoffice Color Palette - New Professional Colors */
+/* ================================================== */
+
+:root {
+    /* Primary Brand Colors - Professional and Readable */
+    --blink-primary: #102E50;          /* Dark Blue - Primary brand color */
+    --blink-secondary: #F5C45E;        /* Gold - Secondary brand color */
+    --blink-accent: #E78B48;           /* Orange - Accent color */
+    --blink-highlight: #BE3D2A;        /* Red - Highlight/CTA color */
+    
+    /* Neutral Colors - Better contrast for text */
+    --blink-dark: #0A1F35;             /* Darker blue - Headings */
+    --blink-text: #2C3E50;             /* Dark blue-gray - Body text */
+    --blink-light-text: #5D6D7E;       /* Medium gray - Secondary text */
+    
+    /* Background Colors - Clean and readable */
+    --blink-white: #ffffff;            /* Pure white - Main backgrounds */
+    --blink-light-bg: #F8F9FA;        /* Very light gray - Section backgrounds */
+    --blink-card-bg: #F1F3F4;         /* Light gray - Card backgrounds */
+    
+    /* Accent Colors - For highlights and CTAs */
+    --blink-warning: #F39C12;          /* Orange - Warnings/notices */
+    --blink-error: #E74C3C;            /* Red - Errors/important */
+    --blink-info: #3498DB;             /* Blue - Information */
+}
+
+/* ================================================== */
+/* Color Utility Classes */
+/* ================================================== */
+
+/* Background Colors */
+.bg-blink-primary { background-color: var(--blink-primary) !important; }
+.bg-blink-secondary { background-color: var(--blink-secondary) !important; }
+.bg-blink-accent { background-color: var(--blink-accent) !important; }
+.bg-blink-highlight { background-color: var(--blink-highlight) !important; }
+.bg-blink-dark { background-color: var(--blink-dark) !important; }
+.bg-blink-white { background-color: var(--blink-white) !important; }
+.bg-blink-light-bg { background-color: var(--blink-light-bg) !important; }
+.bg-blink-card-bg { background-color: var(--blink-card-bg) !important; }
+.bg-blink-warning { background-color: var(--blink-warning) !important; }
+.bg-blink-error { background-color: var(--blink-error) !important; }
+.bg-blink-info { background-color: var(--blink-info) !important; }
+
+/* Text Colors */
+.text-blink-primary { color: var(--blink-primary) !important; }
+.text-blink-secondary { color: var(--blink-secondary) !important; }
+.text-blink-accent { color: var(--blink-accent) !important; }
+.text-blink-highlight { color: var(--blink-highlight) !important; }
+.text-blink-dark { color: var(--blink-dark) !important; }
+.text-blink-text { color: var(--blink-text) !important; }
+.text-blink-light-text { color: var(--blink-light-text) !important; }
+.text-blink-white { color: var(--blink-white) !important; }
+.text-blink-warning { color: var(--blink-warning) !important; }
+.text-blink-error { color: var(--blink-error) !important; }
+.text-blink-info { color: var(--blink-info) !important; }
+
+/* Border Colors */
+.border-blink-primary { border-color: var(--blink-primary) !important; }
+.border-blink-secondary { border-color: var(--blink-secondary) !important; }
+.border-blink-accent { border-color: var(--blink-accent) !important; }
+.border-blink-highlight { border-color: var(--blink-highlight) !important; }
+.border-blink-dark { border-color: var(--blink-dark) !important; }
+.border-blink-light { border-color: var(--blink-card-bg) !important; }
+
+/* ================================================== */
+/* Button Styles - Improved for better visibility */
+/* ================================================== */
+
+.btn-blink-primary {
+    background-color: var(--blink-primary);
+    border-color: var(--blink-primary);
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blink-primary:hover {
+    background-color: var(--blink-dark);
+    border-color: var(--blink-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 46, 80, 0.3);
+}
+
+.btn-blink-secondary {
+    background-color: var(--blink-secondary);
+    border-color: var(--blink-secondary);
+    color: var(--blink-dark);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blink-secondary:hover {
+    background-color: #E6B84A;
+    border-color: #E6B84A;
+    color: var(--blink-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 196, 94, 0.3);
+}
+
+.btn-blink-accent {
+    background-color: var(--blink-accent);
+    border-color: var(--blink-accent);
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blink-accent:hover {
+    background-color: #D67A3A;
+    border-color: #D67A3A;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 139, 72, 0.3);
+}
+
+.btn-blink-highlight {
+    background-color: var(--blink-highlight);
+    border-color: var(--blink-highlight);
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blink-highlight:hover {
+    background-color: #A63524;
+    border-color: #A63524;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(190, 61, 42, 0.3);
+}
+
+.btn-blink-outline {
+    background-color: transparent;
+    border: 2px solid var(--blink-primary);
+    color: var(--blink-primary);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-blink-outline:hover {
+    background-color: var(--blink-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 46, 80, 0.3);
+}
+
+/* ================================================== */
+/* Gradient Backgrounds - More attractive */
+/* ================================================== */
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-dark) 100%);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-accent) 100%);
+}
+
+.bg-gradient-accent {
+    background: linear-gradient(135deg, var(--blink-accent) 0%, var(--blink-highlight) 100%);
+}
+
+.bg-gradient-hero {
+    background: linear-gradient(135deg, rgba(16, 46, 80, 0.95) 0%, rgba(10, 31, 53, 0.95) 100%);
+}
+
+.bg-gradient-cta {
+    background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-accent) 100%);
+}
+
+/* ================================================== */
+/* Card Styles - Better contrast and shadows */
+/* ================================================== */
+
+.card-blink {
+    background-color: var(--blink-white);
+    border: 1px solid var(--blink-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(16, 46, 80, 0.08);
+    transition: all 0.3s ease;
+}
+
+.card-blink:hover {
+    box-shadow: 0 8px 25px rgba(16, 46, 80, 0.15);
+    transform: translateY(-4px);
+    border-color: var(--blink-primary);
+}
+
+.card-blink .card-title {
+    color: var(--blink-dark);
+    font-weight: 600;
+}
+
+.card-blink .card-text {
+    color: var(--blink-text);
+}
+
+/* ================================================== */
+/* Form Styles - Better focus states */
+/* ================================================== */
+
+.form-control {
+    border: 2px solid var(--blink-card-bg);
+    border-radius: 8px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--blink-primary);
+    box-shadow: 0 0 0 3px rgba(16, 46, 80, 0.1);
+    outline: none;
+}
+
+.form-label {
+    color: var(--blink-dark);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ================================================== */
+/* Navigation Styles - Clean and modern */
+/* ================================================== */
+
+.navbar-blink {
+    background-color: var(--blink-white);
+    box-shadow: 0 2px 20px rgba(16, 46, 80, 0.1);
+    padding: 16px 0;
+}
+
+.navbar-blink .navbar-brand {
+    color: var(--blink-primary) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-blink .nav-link {
+    color: var(--blink-text) !important;
+    font-weight: 500;
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar-blink .nav-link:hover,
+.navbar-blink .nav-link.active {
+    color: var(--blink-primary) !important;
+    background-color: rgba(16, 46, 80, 0.1);
+}
+
+/* ================================================== */
+/* Footer Styles - Better contrast */
+/* ================================================== */
+
+.footer-blink {
+    background: linear-gradient(135deg, var(--blink-dark) 0%, var(--blink-primary) 100%);
+    color: var(--blink-white);
+}
+
+.footer-blink h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-blink p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.footer-blink a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-blink a:hover {
+    color: var(--blink-secondary);
+}
+
+/* ================================================== */
+/* Section Styles - Better spacing and backgrounds */
+/* ================================================== */
+
+.section-blink {
+    padding: 80px 0;
+}
+
+.section-blink-dark {
+    background-color: var(--blink-light-bg);
+}
+
+.section-blink-light {
+    background-color: var(--blink-white);
+}
+
+.section-blink-primary {
+    background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-accent) 100%);
+    color: white;
+}
+
+.section-blink-secondary {
+    background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-accent) 100%);
+    color: var(--blink-dark);
+}
+
+/* ================================================== */
+/* Text Utilities - Better readability */
+/* ================================================== */
+
+.text-gradient-primary {
+    background: linear-gradient(135deg, var(--blink-primary), var(--blink-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.text-gradient-secondary {
+    background: linear-gradient(135deg, var(--blink-secondary), var(--blink-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* ================================================== */
+/* Hero Section Styles - Better text visibility */
+/* ================================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, rgba(16, 46, 80, 0.95) 0%, rgba(10, 31, 53, 0.95) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(245,196,94,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-section h1 {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================================== */
+/* Service Icon Styles - Better visibility */
+/* ================================================== */
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--blink-primary), var(--blink-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ================================================== */
+/* Statistics Styles - Better number visibility */
+/* ================================================== */
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--blink-primary);
+    text-shadow: 0 2px 4px rgba(16, 46, 80, 0.2);
+}
+
+.stat-label {
+    color: var(--blink-text);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* ================================================== */
+/* Team Member Styles - Better card design */
+/* ================================================== */
+
+.team-card {
+    background: var(--blink-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(16, 46, 80, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(16, 46, 80, 0.2);
+}
+
+.team-image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image {
+    transform: scale(1.05);
+}
+
+.team-social a {
+    color: var(--blink-primary);
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+    color: var(--blink-accent);
+    transform: translateY(-2px);
+}
+
+/* ================================================== */
+/* Property Card Styles - Real estate specific */
+/* ================================================== */
+
+.property-card {
+    background: var(--blink-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(16, 46, 80, 0.1);
+    transition: all 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(16, 46, 80, 0.2);
+}
+
+.property-price {
+    color: var(--blink-highlight);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.property-location {
+    color: var(--blink-light-text);
+    font-size: 0.9rem;
+}
+
+/* ================================================== */
+/* Feature Box Styles */
+/* ================================================== */
+
+.feature-box {
+    background: var(--blink-white);
+    border: 2px solid var(--blink-card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    border-color: var(--blink-secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(245, 196, 94, 0.2);
+}
+
+.feature-box .icon {
+    font-size: 3rem;
+    color: var(--blink-secondary);
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    color: var(--blink-dark);
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: var(--blink-text);
+}
+
+/* ================================================== */
+/* Testimonial Styles */
+/* ================================================== */
+
+.testimonial-card {
+    background: var(--blink-white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(16, 46, 80, 0.1);
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--blink-secondary);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: serif;
+}
+
+.testimonial-text {
+    color: var(--blink-text);
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.testimonial-author {
+    color: var(--blink-primary);
+    font-weight: 600;
+}
+
+/* ================================================== */
+/* Responsive adjustments */
+/* ================================================== */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+}

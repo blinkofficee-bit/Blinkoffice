@@ -723,7 +723,7 @@ const HomePage: React.FC = () => {
         }
 
         .cta-section {
-          background: #ffffff !important;
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
         }
 
         .hero-title {

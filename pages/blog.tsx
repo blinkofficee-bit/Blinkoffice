@@ -315,7 +315,7 @@ const BlogPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -353,7 +353,7 @@ const BlogPage: React.FC = () => {
 
         .article-image {
           height: 300px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
           position: relative;
           display: flex;
           align-items: center;
@@ -401,7 +401,7 @@ const BlogPage: React.FC = () => {
         }
 
         .article-meta i {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
         }
 
         .article-content p {
@@ -439,7 +439,7 @@ const BlogPage: React.FC = () => {
         .trending-number {
           width: 30px;
           height: 30px;
-          background: hsl(359.1deg 83.26% 53.14%);
+          background: rgb(255, 107, 53);
           color: white;
           border-radius: 50%;
           display: flex;
@@ -517,9 +517,9 @@ const BlogPage: React.FC = () => {
         }
 
         .filter-buttons .btn.active {
-          background: hsl(359.1deg 83.26% 53.14%);
+          background: rgb(255, 107, 53);
           color: white;
-          border-color: hsl(359.1deg 83.26% 53.14%);
+          border-color: rgb(255, 107, 53);
         }
 
         .article-card {
@@ -568,7 +568,7 @@ const BlogPage: React.FC = () => {
         }
 
         .read-more {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
           text-decoration: none;
           font-weight: 500;
           display: flex;
@@ -578,12 +578,12 @@ const BlogPage: React.FC = () => {
         }
 
         .read-more:hover {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
           gap: 1rem;
         }
 
         .newsletter-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(255, 107, 53) 100%) !important;
         }
 
         .newsletter-title {

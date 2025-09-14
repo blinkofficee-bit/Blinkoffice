@@ -256,7 +256,7 @@ const ContactPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -302,7 +302,7 @@ const ContactPage: React.FC = () => {
         .contact-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -329,7 +329,7 @@ const ContactPage: React.FC = () => {
 
         .contact-details a {
           display: block;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
           text-decoration: none;
           font-weight: 500;
           margin-bottom: 0.5rem;
@@ -377,13 +377,13 @@ const ContactPage: React.FC = () => {
         }
 
         .form-control:focus, .form-select:focus {
-          border-color: hsl(359.1deg 83.26% 53.14%);
+          border-color: rgb(255, 107, 53);
           box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
         }
 
         .form-check-input:checked {
-          background-color: hsl(359.1deg 83.26% 53.14%);
-          border-color: hsl(359.1deg 83.26% 53.14%);
+          background-color: rgb(255, 107, 53);
+          border-color: rgb(255, 107, 53);
         }
 
         .quick-contact-item {
@@ -422,7 +422,7 @@ const ContactPage: React.FC = () => {
 
         .map-placeholder {
           height: 400px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
           display: flex;
           align-items: center;
           justify-content: center;
@@ -452,7 +452,7 @@ const ContactPage: React.FC = () => {
 
         .map-directions .btn:hover {
           background: white;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
         }
 
         @media (max-width: 768px) {

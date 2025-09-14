@@ -302,7 +302,7 @@ const ServicesPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -345,7 +345,7 @@ const ServicesPage: React.FC = () => {
         }
 
         .service-header {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
           color: white;
           padding: 2rem;
           border-radius: 15px 15px 0 0;
@@ -408,7 +408,7 @@ const ServicesPage: React.FC = () => {
         .price-range {
           font-size: 1.5rem;
           font-weight: 700;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: rgb(255, 107, 53);
         }
 
         .price-note {
@@ -459,7 +459,7 @@ const ServicesPage: React.FC = () => {
         .step-number {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
           color: white;
           border-radius: 50%;
           display: flex;
@@ -518,7 +518,7 @@ const ServicesPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
         }
 
         .cta-title {

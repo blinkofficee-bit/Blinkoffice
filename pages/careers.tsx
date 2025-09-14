@@ -594,7 +594,7 @@ const CareersPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
+          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
         }
 
         .cta-title {

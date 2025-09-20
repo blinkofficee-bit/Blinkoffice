@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <div className="container">
           <Link href="/" className="navbar-brand d-flex align-items-center">
             <span className="brand-text">
-              <span style={{color: '#ff6b35', fontWeight: 'bold', fontSize: '24px'}}>Blink</span>
+              <span style={{color: 'var(--blink-primary)', fontWeight: 'bold', fontSize: '24px'}}>Blink</span>
               <span style={{
                 background: 'linear-gradient(45deg, #333 0%, #555 50%, #333 100%)',
                 WebkitBackgroundClip: 'text',
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
                   top: '-2px',
                   right: '-8px',
                   fontSize: '12px',
-                  color: '#ff6b35'
+                  color: 'var(--blink-primary)'
                 }}>🏢</span>
               </span>
             </span>

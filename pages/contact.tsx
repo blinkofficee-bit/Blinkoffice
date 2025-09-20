@@ -60,13 +60,12 @@ const ContactPage: React.FC = () => {
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <h4>Visit Our Office</h4>
-                <p>Meet our team at our Gurgaon office</p>
+                <p>Meet our team at our Gurugram office</p>
                 <div className="contact-details">
                   <address>
-                    Office 301, Tower A<br/>
-                    DLF Cyber City<br/>
-                    Gurgaon - 122002<br/>
-                    Haryana, India
+                    U217 New Palam Vihar<br/>
+                    Gurugram, Haryana - 122001<br/>
+                    India
                   </address>
                 </div>
                 <small>Free parking available</small>
@@ -242,7 +241,7 @@ const ContactPage: React.FC = () => {
                   <div className="map-content">
                     <i className="fas fa-map-marker-alt"></i>
                     <h4>Blinkoffice</h4>
-                    <p>Office 301, Tower A, DLF Cyber City<br/>Gurgaon - 122002, Haryana</p>
+                    <p>U217 New Palam Vihar<br/>Gurugram, Haryana - 122001</p>
                     <div className="map-directions">
                       <button className="btn btn-primary">Get Directions</button>
                     </div>
@@ -256,7 +255,7 @@ const ContactPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
+          background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -302,7 +301,7 @@ const ContactPage: React.FC = () => {
         .contact-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
+          background: linear-gradient(135deg, var(--blink-secondary), var(--blink-primary));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -329,7 +328,7 @@ const ContactPage: React.FC = () => {
 
         .contact-details a {
           display: block;
-          color: rgb(255, 107, 53);
+          color: var(--blink-primary);
           text-decoration: none;
           font-weight: 500;
           margin-bottom: 0.5rem;
@@ -377,13 +376,13 @@ const ContactPage: React.FC = () => {
         }
 
         .form-control:focus, .form-select:focus {
-          border-color: rgb(255, 107, 53);
-          box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+          border-color: var(--blink-primary);
+          box-shadow: 0 0 0 0.2rem rgba(30,102,255,0.25);
         }
 
         .form-check-input:checked {
-          background-color: rgb(255, 107, 53);
-          border-color: rgb(255, 107, 53);
+          background-color: var(--blink-primary);
+          border-color: var(--blink-primary);
         }
 
         .quick-contact-item {
@@ -422,7 +421,7 @@ const ContactPage: React.FC = () => {
 
         .map-placeholder {
           height: 400px;
-          background: linear-gradient(135deg, rgb(255, 107, 53), rgb(230, 96, 48));
+          background: linear-gradient(135deg, var(--blink-primary), var(--blink-dark));
           display: flex;
           align-items: center;
           justify-content: center;
@@ -452,7 +451,7 @@ const ContactPage: React.FC = () => {
 
         .map-directions .btn:hover {
           background: white;
-          color: rgb(255, 107, 53);
+          color: var(--blink-primary);
         }
 
         @media (max-width: 768px) {

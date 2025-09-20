@@ -362,7 +362,7 @@ const PropertiesPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -407,7 +407,7 @@ const PropertiesPage: React.FC = () => {
 
         .property-image {
           height: 250px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, var(--blink-secondary), var(--blink-primary));
           position: relative;
           display: flex;
           align-items: center;
@@ -467,7 +467,7 @@ const PropertiesPage: React.FC = () => {
 
         .property-location i {
           margin-right: 0.5rem;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
         }
 
         .property-details {
@@ -486,7 +486,7 @@ const PropertiesPage: React.FC = () => {
         }
 
         .detail-item i {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
         }
 
         .property-features {
@@ -497,8 +497,8 @@ const PropertiesPage: React.FC = () => {
         }
 
         .property-features span {
-          background: #e3f2fd;
-          color: #1976d2;
+          background: var(--blink-light-bg);
+          color: var(--blink-secondary);
           padding: 0.25rem 0.75rem;
           border-radius: 15px;
           font-size: 0.8rem;
@@ -508,7 +508,7 @@ const PropertiesPage: React.FC = () => {
         .property-price {
           font-size: 1.5rem;
           font-weight: 700;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
           margin-bottom: 1.5rem;
         }
 
@@ -522,7 +522,7 @@ const PropertiesPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
+          background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-highlight) 100%) !important;
         }
 
         .cta-title {

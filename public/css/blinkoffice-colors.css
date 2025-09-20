@@ -3,26 +3,26 @@
 /* ================================================== */
 
 :root {
-    /* Primary Brand Colors - Professional and Readable */
-    --blink-primary: #102E50;          /* Dark Blue - Primary brand color */
-    --blink-secondary: #F5C45E;        /* Gold - Secondary brand color */
-    --blink-accent: #E78B48;           /* Orange - Accent color */
-    --blink-highlight: #BE3D2A;        /* Red - Highlight/CTA color */
-    
-    /* Neutral Colors - Better contrast for text */
-    --blink-dark: #0A1F35;             /* Darker blue - Headings */
-    --blink-text: #2C3E50;             /* Dark blue-gray - Body text */
-    --blink-light-text: #5D6D7E;       /* Medium gray - Secondary text */
-    
-    /* Background Colors - Clean and readable */
-    --blink-white: #ffffff;            /* Pure white - Main backgrounds */
-    --blink-light-bg: #F8F9FA;        /* Very light gray - Section backgrounds */
-    --blink-card-bg: #F1F3F4;         /* Light gray - Card backgrounds */
-    
-    /* Accent Colors - For highlights and CTAs */
-    --blink-warning: #F39C12;          /* Orange - Warnings/notices */
-    --blink-error: #E74C3C;            /* Red - Errors/important */
-    --blink-info: #3498DB;             /* Blue - Information */
+    /* Primary Brand Colors - Blue theme */
+    --blink-primary: #1E66FF;          /* Primary blue */
+    --blink-secondary: #2F80ED;        /* Secondary blue (links, accents) */
+    --blink-accent: #0EA5E9;           /* Cyan accent */
+    --blink-highlight: #0B4FE6;        /* Darker blue for CTAs/hover */
+
+    /* Neutral Colors - Improved readability */
+    --blink-dark: #0F2237;             /* Heading/dark surfaces */
+    --blink-text: #1F2937;             /* Body text */
+    --blink-light-text: #6B7280;       /* Secondary text */
+
+    /* Background Colors */
+    --blink-white: #ffffff;            /* Pure white */
+    --blink-light-bg: #F5F7FB;        /* Light blue-tinted background */
+    --blink-card-bg: #EEF2F7;         /* Card borders/backgrounds */
+
+    /* Status Colors */
+    --blink-warning: #F59E0B;          /* Amber */
+    --blink-error: #EF4444;            /* Red */
+    --blink-info: #38BDF8;             /* Sky blue */
 }
 
 /* ================================================== */

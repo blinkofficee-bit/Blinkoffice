@@ -626,7 +626,7 @@ const HomePage: React.FC = () => {
 
         .property-image {
           height: 200px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, var(--blink-secondary), var(--blink-primary));
           position: relative;
           display: flex;
           align-items: center;
@@ -685,7 +685,7 @@ const HomePage: React.FC = () => {
         .property-price {
           font-size: 1.25rem;
           font-weight: 700;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
         }
 
         .feature-list {
@@ -701,7 +701,7 @@ const HomePage: React.FC = () => {
         .feature-icon {
           width: 50px;
           height: 50px;
-          background: hsl(359.1deg 83.26% 53.14%);
+          background: var(--blink-primary);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -723,7 +723,7 @@ const HomePage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
+          background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-highlight) 100%) !important;
         }
 
         .hero-title {

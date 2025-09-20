@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 <div className="footer-brand">
                   <div className="brand-container mb-4">
                     <span className="footer-brand-text">
-                      <span style={{color: '#ff6b35', fontWeight: 'bold', fontSize: '32px'}}>Blink</span>
+                      <span style={{color: 'var(--blink-primary)', fontWeight: 'bold', fontSize: '32px'}}>Blink</span>
                       <span style={{
                         background: 'linear-gradient(45deg, #fff 0%, #f0f0f0 50%, #fff 100%)',
                         WebkitBackgroundClip: 'text',
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                           top: '-4px',
                           right: '-12px',
                           fontSize: '16px',
-                          color: '#ff6b35'
+                          color: 'var(--blink-primary)'
                         }}>🏢</span>
                       </span>
                     </span>
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                     <i className="fas fa-map-marker-alt"></i>
                     <div>
                       <strong>Address</strong>
-                      <p>Sector 44, Gurgaon<br />Haryana 122003, India</p>
+                      <p>U217 New Palam Vihar<br />Gurugram, Haryana - 122001, India</p>
                     </div>
                   </div>
                   <div className="contact-item">

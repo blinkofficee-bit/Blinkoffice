@@ -302,7 +302,7 @@ const ServicesPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
+          background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
           color: white;
           padding: 80px 0;
         }

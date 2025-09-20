@@ -3,20 +3,21 @@
 
 /* CSS Variables - Simple Clean Palette */
 :root {
-  --blink-primary: rgb(255, 107, 53);  /* Orange CTA */
-  --blink-secondary: #6b7280;    /* Grey Text */
-  --blink-accent: rgb(255, 107, 53);   /* Orange CTA */
-  --blink-dark: #000000;         /* Black Headings */
-  --blink-light-bg: #ffffff;     /* Complete White */
-  --blink-section-bg: #ffffff;   /* Complete White */
-  --blink-text: #000000;         /* Black Headings */
-  --blink-light-text: #6b7280;   /* Grey Text */
-  --blink-highlight: rgb(255, 107, 53); /* Orange CTA */
-  --blink-success: rgb(255, 107, 53);   /* Orange CTA */
-  --blink-warning: rgb(255, 107, 53);   /* Orange CTA */
-  --blink-danger: rgb(255, 107, 53);    /* Orange CTA */
-  --blink-info: rgb(255, 107, 53);      /* Orange CTA */
-  --blink-border: #e5e7eb;       /* Light Grey Border */
+  /* Align with public/css/blinkoffice-colors.css */
+  --blink-primary: #1E66FF;
+  --blink-secondary: #2F80ED;
+  --blink-accent: #0EA5E9;
+  --blink-dark: #0F2237;
+  --blink-light-bg: #F5F7FB;
+  --blink-section-bg: #ffffff;
+  --blink-text: #1F2937;
+  --blink-light-text: #6B7280;
+  --blink-highlight: #0B4FE6;
+  --blink-success: #10B981;
+  --blink-warning: #F59E0B;
+  --blink-danger: #EF4444;
+  --blink-info: #38BDF8;
+  --blink-border: #e5e7eb;
 }
 
 /* Reset and Base Styles */
@@ -126,21 +127,21 @@ p {
 }
 
 .btn-primary {
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   color: white;
-  box-shadow: 0 4px 14px 0 rgba(239, 68, 68, 0.25);
+  box-shadow: 0 4px 14px 0 rgba(30, 102, 255, 0.25);
 }
 
 .btn-primary:hover {
-  background: rgb(230, 96, 48);
+  background: var(--blink-highlight);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.35);
+  box-shadow: 0 8px 25px rgba(30, 102, 255, 0.35);
   color: white;
 }
 
 .btn-primary:active {
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.25);
+  box-shadow: 0 4px 14px rgba(30, 102, 255, 0.25);
 }
 
 .btn-secondary {
@@ -149,19 +150,19 @@ p {
 }
 
 .btn-secondary:hover {
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   color: white;
   transform: translateY(-2px);
 }
 
 .btn-outline-primary {
-  border: 2px solid rgb(255, 107, 53);
-  color: rgb(255, 107, 53);
+  border: 2px solid var(--blink-primary);
+  color: var(--blink-primary);
   background: transparent;
 }
 
 .btn-outline-primary:hover {
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   color: white;
 }
 
@@ -205,7 +206,7 @@ p {
 .service-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
+  background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -213,7 +214,7 @@ p {
   margin: 0 auto 2rem;
   color: white;
   font-size: 2rem;
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.25);
+  box-shadow: 0 8px 25px rgba(30, 102, 255, 0.25);
 }
 
 .service-card h4 {
@@ -246,7 +247,7 @@ p {
 
 .service-card li:before {
   content: "✓";
-  color: rgb(255, 107, 53);
+  color: var(--blink-primary);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -263,8 +264,8 @@ p {
 }
 
 .form-control:focus {
-  border-color: rgb(255, 107, 53);
-  box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.25);
+  border-color: var(--blink-primary);
+  box-shadow: 0 0 0 0.2rem rgba(30, 102, 255, 0.25);
 }
 
 .form-select {
@@ -275,13 +276,13 @@ p {
 }
 
 .form-select:focus {
-  border-color: rgb(255, 107, 53);
-  box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.25);
+  border-color: var(--blink-primary);
+  box-shadow: 0 0 0 0.2rem rgba(30, 102, 255, 0.25);
 }
 
 /* Utility Classes */
 .text-primary {
-  color: rgb(255, 107, 53) !important;
+  color: var(--blink-primary) !important;
 }
 
 .text-secondary {
@@ -289,7 +290,7 @@ p {
 }
 
 .text-accent {
-  color: rgb(255, 107, 53) !important;
+  color: var(--blink-accent) !important;
 }
 
 .bg-light-custom {
@@ -297,7 +298,7 @@ p {
 }
 
 .bg-primary-custom {
-  background: rgb(255, 107, 53) !important;
+  background: var(--blink-primary) !important;
 }
 
 /* Animation Classes */
@@ -398,8 +399,8 @@ p {
 }
 
 .text-accent {
-  color: hsl(359.1deg 83.26% 58.14%);
-  text-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
+  color: var(--blink-secondary);
+  text-shadow: 0 0 30px rgba(30, 102, 255, 0.25);
 }
 
 .hero-buttons {
@@ -429,7 +430,7 @@ p {
 }
 
 .indicator.active {
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   transform: scale(1.2);
 }
 
@@ -470,7 +471,7 @@ p {
 .value-icon, .category-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%);
+  background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -478,7 +479,7 @@ p {
   margin: 0 auto 2rem;
   color: white;
   font-size: 2rem;
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.25);
+  box-shadow: 0 8px 25px rgba(30, 102, 255, 0.25);
 }
 
 .value-card h4, .expertise-card h5, .location-card h5, .category-card h5 {
@@ -510,7 +511,7 @@ p {
 
 .expertise-card li:before {
   content: "•";
-  color: rgb(255, 107, 53);
+  color: var(--blink-primary);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -519,7 +520,7 @@ p {
 
 /* Job Card Specific Styles */
 .job-card {
-  border-left: 4px solid rgb(255, 107, 53);
+  border-left: 4px solid var(--blink-primary);
 }
 
 .job-header {
@@ -539,7 +540,7 @@ p {
 }
 
 .job-type {
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
@@ -567,7 +568,7 @@ p {
 }
 
 .job-meta i {
-  color: rgb(255, 107, 53);
+  color: var(--blink-primary);
 }
 
 /* Hero Stats */
@@ -623,6 +624,30 @@ p {
     width: 60px;
     height: 60px;
     font-size: 1.5rem;
+  }
+
+  /* Improve hero text readability on mobile */
+  .hero-section .hero-title {
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-section .hero-subtitle {
+    color: rgba(255, 255, 255, 0.98);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  /* Slightly increase contrast for section texts on mobile */
+  .section-title {
+    color: var(--blink-dark);
+  }
+
+  .section-subtitle {
+    color: #374151; /* stronger than #6c757d for mobile */
   }
 }
 
@@ -751,7 +776,7 @@ p {
   left: 50%;
   width: 0;
   height: 2px;
-  background: rgb(255, 107, 53);
+  background: var(--blink-primary);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -762,12 +787,12 @@ p {
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(255, 107, 53) !important;
+  color: var(--blink-primary) !important;
   transform: translateY(-2px);
 }
 
 .navbar-nav .nav-link.active {
-  color: rgb(255, 107, 53) !important;
+  color: var(--blink-primary) !important;
   font-weight: 600;
 }
 
@@ -815,14 +840,14 @@ p {
   }
   
   .navbar-nav .nav-link:hover {
-    background: rgb(255, 107, 53);
+    background: var(--blink-primary);
     color: white !important;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 5px 15px rgba(30, 102, 255, 0.3);
   }
   
   .navbar-nav .nav-link.active {
-    background: rgb(255, 107, 53);
+    background: var(--blink-primary);
     color: white !important;
     font-weight: 600;
   }

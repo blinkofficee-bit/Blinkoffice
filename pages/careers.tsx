@@ -382,7 +382,7 @@ const CareersPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -428,7 +428,7 @@ const CareersPage: React.FC = () => {
         .benefit-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, var(--blink-secondary), var(--blink-primary));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -502,7 +502,7 @@ const CareersPage: React.FC = () => {
         }
 
         .job-meta i {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
         }
 
         .job-details p {
@@ -577,7 +577,7 @@ const CareersPage: React.FC = () => {
 
         .benefit-item i {
           font-size: 3rem;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
           margin-bottom: 1rem;
         }
 
@@ -594,7 +594,7 @@ const CareersPage: React.FC = () => {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, rgb(255, 107, 53) 0%, rgb(230, 96, 48) 100%) !important;
+          background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-highlight) 100%) !important;
         }
 
         .cta-title {

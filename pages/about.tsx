@@ -11,10 +11,7 @@ const AboutPage: React.FC = () => {
     >
       {/* Hero Section */}
       <section className="hero-section py-5" style={{
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+        background: 'linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%)',
         color: 'white'
       }}>
         <div className="container">

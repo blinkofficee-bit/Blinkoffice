@@ -359,7 +359,7 @@ const TeamPage: React.FC = () => {
 
       <style jsx>{`
         .hero-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%);
+          background: linear-gradient(135deg, var(--blink-secondary) 0%, var(--blink-primary) 100%);
           color: white;
           padding: 80px 0;
         }
@@ -378,7 +378,7 @@ const TeamPage: React.FC = () => {
         .section-title {
           font-size: 2.5rem;
           font-weight: 700;
-          color: #102e50;
+          color: var(--blink-dark);
           margin-bottom: 1rem;
         }
 
@@ -402,11 +402,11 @@ const TeamPage: React.FC = () => {
         }
 
         .team-card.leadership {
-          border-top: 4px solid hsl(359.1deg 83.26% 53.14%);
+          border-top: 4px solid var(--blink-primary);
         }
 
         .team-image {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%), hsl(359.1deg 83.26% 53.14%));
+          background: linear-gradient(135deg, var(--blink-secondary), var(--blink-primary));
           height: 200px;
           display: flex;
           align-items: center;
@@ -430,13 +430,13 @@ const TeamPage: React.FC = () => {
         }
 
         .team-content h4, .team-content h5 {
-          color: #102e50;
+          color: var(--blink-dark);
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
 
         .team-position {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
           font-weight: 500;
           margin-bottom: 1rem;
         }
@@ -461,8 +461,8 @@ const TeamPage: React.FC = () => {
         }
 
         .team-stats span {
-          background: #e3f2fd;
-          color: #1976d2;
+          background: var(--blink-light-bg);
+          color: var(--blink-secondary);
           padding: 0.25rem 0.75rem;
           border-radius: 15px;
           font-size: 0.8rem;
@@ -483,13 +483,13 @@ const TeamPage: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
           text-decoration: none;
           transition: all 0.3s ease;
         }
 
         .team-social a:hover {
-          background: hsl(359.1deg 83.26% 53.14%);
+          background: var(--blink-primary);
           color: white;
         }
 
@@ -500,7 +500,7 @@ const TeamPage: React.FC = () => {
         }
 
         .team-contact a {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
           text-decoration: none;
           font-size: 0.9rem;
         }
@@ -520,7 +520,7 @@ const TeamPage: React.FC = () => {
         }
 
         .department-title i {
-          color: hsl(359.1deg 83.26% 53.14%);
+          color: var(--blink-primary);
         }
 
         .value-card {
@@ -563,7 +563,7 @@ const TeamPage: React.FC = () => {
         }
 
         .join-team-section {
-          background: linear-gradient(135deg, hsl(359.1deg 83.26% 53.14%) 0%, hsl(359.1deg 83.26% 53.14%) 100%) !important;
+          background: linear-gradient(135deg, var(--blink-primary) 0%, var(--blink-highlight) 100%) !important;
         }
 
         .cta-title {

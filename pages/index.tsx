@@ -391,20 +391,28 @@ const HomePage: React.FC = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(58, 134, 255, 0.8) 0%, rgba(58, 134, 255, 0.6) 100%);
+          /* Stronger overlay with darker base for contrast */
+          background: linear-gradient(135deg, rgba(15, 34, 55, 0.75) 0%, rgba(30, 102, 255, 0.6) 100%);
         }
 
         .hero-content {
           position: relative;
           z-index: 2;
           color: white;
+          /* Add subtle scrim behind text for readability */
+          background: rgba(15, 34, 55, 0.28);
+          backdrop-filter: blur(1.5px);
+          -webkit-backdrop-filter: blur(1.5px);
+          padding: 1.25rem 1.5rem;
+          border-radius: 14px;
+          display: inline-block;
         }
 
         .hero-title {
           font-size: 3.5rem;
           font-weight: 700;
           margin-bottom: 1.5rem;
-          text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+          text-shadow: 0 3px 10px rgba(0,0,0,0.45);
         }
 
         .text-accent {
@@ -414,8 +422,8 @@ const HomePage: React.FC = () => {
         .hero-subtitle {
           font-size: 1.3rem;
           margin-bottom: 2rem;
-          opacity: 0.95;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+          opacity: 0.98;
+          text-shadow: 0 2px 8px rgba(0,0,0,0.35);
         }
 
         .hero-buttons {
@@ -763,6 +771,12 @@ const HomePage: React.FC = () => {
         @media (max-width: 768px) {
           .hero-title {
             font-size: 2.5rem;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+          }
+          .hero-content {
+            /* Stronger scrim on mobile */
+            background: rgba(15, 34, 55, 0.38);
+            padding: 1rem 1.1rem;
           }
           
           .section-title {

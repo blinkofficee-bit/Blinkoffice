@@ -3,6 +3,11 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/blog": "pages/blog.js",
-  "/contact": "pages/contact.js"
+  "/contact": "pages/contact.js",
+  "/about": "pages/about.js",
+  "/services": "pages/services.js",
+  "/properties": "pages/properties.js",
+  "/team": "pages/team.js",
+  "/careers": "pages/careers.js",
+  "/blog": "pages/blog.js"
 }
